@@ -9,7 +9,7 @@ Provide a template where I can find what I've used in the past w/out havint to s
 * Build command in source files if appropriate.
 * A real "hello world" project
 *  `Makefile`
-* Unit tests
+* Unit tests (CUnit as employed for <https://github.com/HankB/game_of_life/tree/master/C>)
 * `cmake` (maybe some day.)
 * `valgrind` command
 * Proper use of `const` for `char*` types. I hope!
