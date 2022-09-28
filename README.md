@@ -14,4 +14,4 @@ Provide a template where I can find what I've used in the past w/out havint to s
 * `valgrind` command
 * Proper use of `const` for `char*` types. I hope!
 
-C sources will be formatted using the default for VS Code (`C/C++ Extension Pack` installed.) Invoke ising `<shift><ctrl>I`. Makefiles too if it works for them.
+C sources will be formatted using the default for VS Code (`C/C++ Extension Pack` installed.) Invoke using `<shift><ctrl>I`. Makefiles too if it works for them.
