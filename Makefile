@@ -2,8 +2,8 @@ CC=gcc
 CFLAGS=-I. -Wall -g
 DEPS = hello.h
 OBJ = hello.o hello_message.o
-# TEST_OBJ = test_logic.o logic.o
-# TEST_LIBS=-lcunit -lefence
+TEST_OBJ = test_hello.o hello_message.o
+TEST_LIBS=-lcunit -lefence
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
@@ -11,9 +11,9 @@ OBJ = hello.o hello_message.o
 hello: $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-# test_logic: CFLAGS += -fsanitize=address
-# test_logic: $(TEST_OBJ)
-# 	$(CC) -o $@ $^ $(CFLAGS) $(TEST_LIBS)
+test_hello: CFLAGS += -fsanitize=address
+test_hello: $(TEST_OBJ)
+	$(CC) -o $@ $^ $(CFLAGS) $(TEST_LIBS)
 
 .PHONY: clean valgrind
 
